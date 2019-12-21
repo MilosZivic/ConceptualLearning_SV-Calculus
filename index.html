@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://www.desmos.com/api/v1.3/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script src="javascript.js"></script>
+
+    <title>index.html</title>
+    
+</head>
+<body onload="init();">
+
+<div id="wraper">
+ <p class="pocetna"><b><i>Omega Centauri</i></b>, koja je prikazana na slici,
+     najveći je globularni klaster u našoj galaksiji. 
+     Sadrži nekoliko miliona zvezda, koje su usled jakih gravitacionih sila 
+     između njih, oblikovane u sferu.Astronomi koriste tehniku <i>zvezdana stereografija</i>
+     ne bi li utvrdili gustinu zvezda u sazvežđu, a na osnovu 
+     gustine koju mogu izračunati sa snimljene fotografije.Primena integralnog računa nam omogućava
+     da izračunamo integral koji na osnovu analizirane gustine računa 
+     pravu gustinu zvezda u nekom sazvežđu</p>
+
+ <div id="side_nav">
+    Verzija 1.0 
+    <hr>
+    <p class="main_menu">1.DIFERENCIJALNI<br>RAČUN</p> <br>
+    <button class="toc_btn" onclick="init_M1_1()">M1.1: Tangenta i &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSečica</button> <br><br>
+    <button class="toc_btn" onclick="init_M1_2()">M1.2: Osobine &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGrafika &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFunkcije</button>
+    <hr>
+    <p class="main_menu">2.INTEGRALNI<br>RAČUN</p> <br>
+    <button class="toc_btn" onclick="init_M2_1()">M2.1: <i>Riemann</i>-ove &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSume</button> <br><br>
+    <button class="toc_btn" onclick="init_M2_2()">M2.2</button>
+    <hr>
+    <p class="main_menu">3.DIFERENCIJALNE<br>JEDNAČINE</p> <br>
+    <button class="toc_btn" onclick="init_M3_1()">M3.1: Direkciona &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPolja</button> <br><br>
+    <button class="toc_btn" onclick="init_M3_2()">M3.2: <i>Euler</i>-ov &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMetod</button>
+
+    <hr>
+ </div>
+    
+<div id="header">
+    <p id="naslov">Ovde stoji broj i naziv modula</p>
+    <hr>
+    <form id="naslovna_forma">Ovde stoji forma u naslovu</form>
+</div>  
+
+
+<!--DESMOS graphing calculator-->
+<div id="graphing_calculator">
+   
+</div>
+
+<div id="side_content">
+    <div id="c_ispis">Ovde je ispis sadrzaja</div>
+</div>
+
+<div id="footer">
+  <div id="traka">
+    <div id="f_menu">
+        <button class="f_menu" id="koncept" onclick="c_ispis()">Osnovni Koncept</button>
+        <button class="f_menu" id="instrukcije" onclick="i_ispis()">Instrukcije</button>
+        <button class="f_menu" id="primeri" onclick="e_ispis()">Primeri</button>
+    </div>
+  </div>
+  <div id="f_ispis">ovde ce nesto da bude napisano!</div>
+</div>
+</div>
+
+</body>
+</html>
